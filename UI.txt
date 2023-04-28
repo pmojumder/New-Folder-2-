@@ -1,0 +1,18 @@
+The UiAutomator driver supports a number of standard Appium capabilities, but has an additional set of capabilities that modulate the behavior of the driver. These can be found currently at the Android section of the aforementioned doc.
+
+For web tests, to automate Chrome instead of your own application, leave the app capability empty and instead set the browserName capability to Chrome. Note that you are responsible for ensuring that Chrome is on the emulator/device, and that it is of a version compatible with Chromedriver.
+
+
+-----------------------------------------------------------
+UI Automator APIs
+The UI Automator APIs allow you to write robust tests without needing to know about the implementation details of the app that you are targeting. You can use these APIs to capture and manipulate UI components across multiple apps:
+
+UiCollection: Enumerates a container's UI elements for the purpose of counting, or targeting sub-elements by their visible text or content-description property.
+UiObject: Represents a UI element that is visible on the device.
+UiScrollable: Provides support for searching for items in a scrollable UI container.
+UiSelector: Represents a query for one or more target UI elements on a device.
+Configurator: Allows you to set key parameters for running UI Automator tests.
+
+----
+UIAutomation driver is to set the platformName capability in your new session request to the value of iOS. Of course, you must also include appropriate platformVersion,
+ deviceName, and app capabilities, at a minimum
